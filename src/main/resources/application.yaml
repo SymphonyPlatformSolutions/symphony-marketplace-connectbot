@@ -1,0 +1,11 @@
+bdk:
+  host: develop2.symphony.com
+
+  bot:
+    username: bot.pierre.neu
+    privateKey:
+      path: rsa/privatekey.pem
+
+logging:
+  level:
+    com.symphony: debug
