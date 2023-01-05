@@ -79,6 +79,9 @@ public class ConnectHandler {
         this.connectionService.acceptConnection(userId);
         Stream stream = this.streamService.create(userId);
         sendWelcomeMessage(userId, stream);
+
+        // Add here steps to give a limited time access to the service if applicable
+        // grantLimitedAccess(userId);
     }
 
     /**
@@ -90,6 +93,8 @@ public class ConnectHandler {
         Long botUserId = this.sessionService.getSession().getId();
         
         HashMap<String, String> templateValues = new HashMap<String, String>();
+        
+        // Update values below
         templateValues.put("userid", Long.toString(userId));
         templateValues.put("botuserid", Long.toString(botUserId));
         templateValues.put("supportemail", "thibault.chays@symphony.com");
