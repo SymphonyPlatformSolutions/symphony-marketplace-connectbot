@@ -4,6 +4,9 @@ The objective of this code sample is to help partners to make their Symphony bot
 
 It is based on the Java BDK. If you are not familiar with the Symphony Java BDK, please have a look here: https://github.com/finos/symphony-bdk-java
 
+## Disclaimer
+This code sample is only an example. It is not meant to be directly used in a production environment. 
+
 ## Requirements for the Connect flow
 The requirements of the Connect flow are to provide a good user experience to Symphony users who will connect to your bot from the Marketplace.
 This means:
@@ -48,9 +51,6 @@ You may also want to add steps to grant the user a limited time access to the se
 ```
 
 Regarding build & dependencies, please look at https://github.com/finos/symphony-bdk-java
-
-## Disclaimer
-This code sample is only an example. It is not meant to be directly used in a production environment. 
 
 ## Start the bot
 Once your bot is running (main class: BotApplication.java), send a connection request from an external user to your bot. 
